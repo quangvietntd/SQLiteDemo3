@@ -59,7 +59,7 @@ export default class Register extends Component {
                 if (len===0) {
                     let sql = `INSERT INTO users (username, password) VALUES ("${username}", ${password})`;
                     tx.executeSql(sql, [], (tx, results) => {
-                        alert('insert successfuly!');
+                        alert('Register successfuly!');
                     });
                 } else {
                     alert('This username is used! Please choose another username.');

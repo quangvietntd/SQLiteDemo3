@@ -8,7 +8,8 @@ export default class Main extends Component {
         const username = this.props.navigation.getParam('username', '');
         return (
             <View style={wrapper}>
-                <Text style={welcomeText}> Login with username: {username} </Text>
+                <Text style={welcomeText}>Welcome!</Text>
+                <Text style={welcomeText}> You logged in with username: {username} </Text>
             </View>
         );
     }
